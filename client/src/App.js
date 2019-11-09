@@ -1,9 +1,10 @@
 import React from "react";
+import PlayerCard from "./components/PlayerCard";
 import "./App.css";
 
 class App extends React.Component {
   state = {
-    player: {}
+    players: []
   };
   componentDidMount() {
     fetch("http://localhost:5000/api/players")
@@ -11,7 +12,7 @@ class App extends React.Component {
       .then(res => {
         // console.log(res);
         this.setState({
-          player: res
+          players: res
         });
       })
       .catch(err => {
@@ -19,8 +20,12 @@ class App extends React.Component {
       });
   }
   render() {
-    console.log(`app: this.state.player: `, this.state.player);
-    return <div>hello from app</div>;
+    console.log(`app: this.state.player: `, this.state.players);
+    return (
+      <div>
+        <PlayerCard players={this.state.players} />
+      </div>
+    );
   }
 }
 
