@@ -1,5 +1,6 @@
 import React from "react";
 import PlayerCard from "./components/PlayerCard";
+import Navbar from "./components/navbar";
 import "./App.css";
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
     console.log(`app: this.state.player: `, this.state.players);
     return (
       <div>
+        <Navbar />
         <PlayerCard players={this.state.players} />
       </div>
     );
