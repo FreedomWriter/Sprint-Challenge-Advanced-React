@@ -144,6 +144,25 @@ h1 {
   font-size: 2.4rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
 .navbar {
   align-items: center;
   border-bottom: 1px solid rgb(221, 221, 221);
@@ -186,9 +205,8 @@ h1 {
 }
 
 .navbar {
-  background-color: #6b6c70;
+  background-color: #545658;
   border: none;
-  /* position: absolute; */
 }
 
 .card-container {
@@ -197,11 +215,8 @@ h1 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  border: 1px solid #6b6c70;
+  border: 1px solid #545658;
   height: 300px;
   width: 50%;
-}
-
-.card {
   font-size: 1.6rem;
 }
